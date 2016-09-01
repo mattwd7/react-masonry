@@ -1,0 +1,61 @@
+#banner {
+  width: 100%;
+  height: 50px;
+  background: #ccc;
+  padding: 40px;
+}
+#banner h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.columns {
+  width: 1400px;
+  margin: 20px auto 0 auto;
+}
+.column {
+  width: 250px;
+  min-height: 600px;
+  float: left;
+  margin-right: 20px;
+}
+
+.column .photo {
+  position: relative;
+  word-wrap: break-word;
+  border: 1px solid black;
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.column .photo img {
+  width: 100%;
+}
+.column .photo .views {
+  position: absolute;
+  width: 80%;
+  top: 50px;
+  left: 20px;
+  margin: 0 auto;
+  background: #eee;
+  display: none;
+  padding: 5px 10px;
+}
+.column .photo:hover {
+  cursor: pointer;
+}
+.column .photo:hover .views {
+  display: block;
+}
+.column .photo.favorited {
+  background: pink;
+}
+.column .photo .name {
+  font-weight: bold;
+}
+.column .photo .description {
+  font-size: 10px;
+  display: none;
+}
+
+
